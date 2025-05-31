@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"> <TextView
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="#8E24AA"
+    android:padding="16dp"
+    android:text="CustomListView"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtTenTraiCay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nhập tên trái cây" />
+
+    <EditText
+        android:id="@+id/edtMoTaTraiCay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nhập mô tả trái cây" />
+
+    <Spinner
+        android:id="@+id/spinnerHinh"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btnCapNhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewTraiCay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:divider="#B0BEC5"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
